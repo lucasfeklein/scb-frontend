@@ -32,7 +32,7 @@ const AboutSectionTwo = () => {
                   Respostas específicas
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  O chatbot WebWhiz responde apenas com base nos dados fornecidos. Portanto, você sempre obtém resultados precisos.
+                  O chatbot responde apenas com base nos dados fornecidos. Portanto, você sempre obtém resultados precisos.
                 </p>
               </div>
               <div className="mb-1">

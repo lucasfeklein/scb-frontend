@@ -5,30 +5,45 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    question: "Existe um plano gratuito?",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
-    star: 5,
+      "Não há plano gratuito disponível. Mas você pode clicar no ícone do chatbot na parte inferior direita desta página e experimentar a demonstração.",
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    question: "Como treinar o chatbot?",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
-    star: 5,
+      "No momento, só oferecemos suporte para treinar o chatbot através de URLs. Você pode simplesmente inserir uma URL e o chatbot será treinado em todo o conteúdo presente naquela URL.",
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    question: "Quais dados você coleta do meu site?",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
-    star: 5,
+      "Nossa plataforma coleta dados das páginas do seu site para treinar o seu chatbot. Isso inclui dados de texto das páginas, bem como qualquer metadado, como títulos ou descrições de página. Não coletamos dados confidenciais do seu site. Nós escaneamos apenas dados públicos disponíveis para os mecanismos de busca.",
+  },
+  {
+    id: 4,
+    question: "O chatbot responde em diferentes línguas?",
+    content:
+      "Sim, você pode perguntar em qualquer idioma que o chatbot será capaz de identificar e responder de acordo.",
+  },
+  {
+    id: 5,
+    question: "Qual modelo de inteligência artificial vocês utilizam?",
+    content:
+      "Utilizamos ChatGPT para todos chatbots.",
+  },
+  {
+    id: 6,
+    question: "Quanto tempo demora para treinar?",
+    content:
+      "Depende no número de páginas do seu website. Mas, de modo geral, demora apenas alguns minutos.",
+  },
+  {
+    id: 7,
+    question: "Há um limite no número de mensagens que podem ser enviadas?",
+    content:
+      "Atualmente, não há limite no número de mensagens que podem ser enviadas. Dito isso, estamos monitorando o uso e aplicaremos limites de taxa apenas se necessário.",
   },
 ];
 
@@ -37,12 +52,12 @@ const Testimonials = () => {
     <section className="relative z-10 bg-primary/[.03] py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Perguntas Frequentes"
+          paragraph="Tem alguma pergunta e não consegue achar a resposta? Nos mande um email e responderemos."
           center
         />
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-2">
           {testimonialData.map((testimonial) => (
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}
