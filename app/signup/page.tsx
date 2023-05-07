@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 const SignupPage = () => {
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false)
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -10,8 +11,9 @@ const SignupPage = () => {
 
   async function handleSubmit(event) {
     event.preventDefault();
+    setLoading(true)
     try {
-      const response = await fetch('http://localhost:3000/auth/magic-link', {
+      const response = await fetch('http://localhost:8000/request-magic-link', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -25,6 +27,8 @@ const SignupPage = () => {
     } catch (error) {
       // Handle error
     }
+    setEmail('')
+    setLoading(false)
   }
 
   return (
@@ -64,8 +68,9 @@ const SignupPage = () => {
                   <div className="mb-6">
                     <button
                       onClick={handleSubmit}
+                      disabled={loading}
                       className="flex w-full items-center justify-center rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-                      Entre
+                      {loading ? '...' : 'Entre'}
                     </button>
                   </div>
                 </form>
