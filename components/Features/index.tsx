@@ -11,8 +11,8 @@ const Features = () => {
       >
         <div className="container">
           <SectionTitle
-            title="Main Features"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title="Crie seu chatbot"
+            paragraph="Tudo que você precisa saber para criar seu chatbot em alguns minutos."
             center
           />
 
