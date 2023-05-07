@@ -18,7 +18,7 @@ const Hero = () => {
                   ChatChima Bot para todos sites
                 </h1>
                 <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                  Nosso chatbot é treinado com informações do seu website e oferece atendimento personalizado e eficiente para seus clientes. Com a capacidade de lidar com um grande volume de perguntas e solicitações simultaneamente, seu atendimento nunca mais será o mesmo.
+                  Crie um chatbot com Inteligência Artificial treinada pelo seu website e ofereça atendimento personalizado e eficiente para seus clientes. Lide com várias perguntas e solicitações simultâneas. Experimente agora a revolução da IA no atendimento ao cliente!
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
