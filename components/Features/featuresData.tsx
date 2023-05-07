@@ -21,7 +21,7 @@ const featuresData: Feature[] = [
     icon: <FaCodeBranch className="text-4xl" />,
     title: "Adicione o código no seu site",
     paragraph:
-      "Para incorporar o chatbot ao seu site, basta adicionar um pequeno código ao seu site.",
+      "Para incorporar o chatbot ao seu site, basta adicionar um pequeno código.",
   },
 ];
 export default featuresData;
