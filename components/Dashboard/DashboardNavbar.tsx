@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { BsFillPlusCircleFill } from 'react-icons/bs';
 import { FaEdit } from 'react-icons/fa';
 import { MdSpaceDashboard } from 'react-icons/md';
 
 function DashboardNavbar() {
+  const router = useRouter();
 
   return (
     <div className="flex">
@@ -18,15 +20,25 @@ function DashboardNavbar() {
         <div className="flex-1 py-4 px-6 bg-gray">
           <ul className="space-y-2">
             <li>
-              <Link href="/dashboard" className="flex gap-2 items-center py-2 px-6 rounded-md hover:text-white hover:bg-primary">
-                  <BsFillPlusCircleFill />
-                  <p>Criar</p>                
+              <Link
+                href="/dashboard/create"
+                className={`flex gap-2 items-center py-2 px-6 rounded-md hover:text-white hover:bg-primary ${
+                  router.pathname === '/dashboard/create' ? 'text-primary' : ''
+                }`}
+              >
+                <BsFillPlusCircleFill />
+                <p>Criar</p>                
               </Link>
             </li>
             <li>
-              <Link href="/dashboard" className="flex gap-2 items-center py-2 px-6 rounded-md hover:text-white hover:bg-primary">
-                  <FaEdit/>
-                  <p>Customizar</p>       
+              <Link
+                href="/dashboard"
+                className={`flex gap-2 items-center py-2 px-6 rounded-md hover:text-white hover:bg-primary ${
+                  router.pathname === '/dashboard' ? 'text-primary' : ''
+                }`}
+              >
+                <FaEdit/>
+                <p>Customizar</p>       
               </Link>
             </li>
           </ul>
