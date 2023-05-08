@@ -8,8 +8,8 @@ function DashboardNavbar() {
   const router = useRouter();
 
   return (
-    <div className="flex">
-      <div className="flex flex-col h-screen w-60 border-r dashboard-border-color">
+    <div className="fixed top-0 left-0 h-screen w-60 z-50">
+      <div className="flex flex-col h-full w-full border-r dashboard-border-color">
         <div className="py-4 px-6 bg-gray-900 border-b dashboard-border-color">
           <h1 className="text-lg font-bold">ChatChima Bot</h1>
         </div>
