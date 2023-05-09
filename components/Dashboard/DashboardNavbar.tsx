@@ -32,9 +32,9 @@ function DashboardNavbar() {
             </li>
             <li>
               <Link
-                href="/dashboard"
+                href="/dashboard/custom"
                 className={`flex gap-2 items-center py-2 px-6 rounded-md hover:text-white hover:bg-primary ${
-                  router.pathname === '/dashboard' ? 'text-primary' : ''
+                  router.pathname === '/dashboard/custom' ? 'text-primary' : ''
                 }`}
               >
                 <FaEdit/>
