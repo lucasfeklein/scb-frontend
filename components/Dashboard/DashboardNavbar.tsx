@@ -1,11 +1,36 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import { BsFillPlusCircleFill } from 'react-icons/bs';
 import { FaEdit } from 'react-icons/fa';
 import { MdSpaceDashboard } from 'react-icons/md';
 
 function DashboardNavbar() {
   const router = useRouter();
+  const [email, setEmail] = useState('');
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const token = localStorage.getItem('token');
+        const response = await fetch('http://localhost:8000/auth-verify', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        if (!response.ok) {
+          throw new Error('Seu tempo expirou! Favor entrar novamente.');
+        }
+        const data = await response.json();
+        setEmail(data.email);
+      } catch (error) {
+        console.error(error);
+        alert(error.message);
+        router.push('/signin');
+      }
+    }
+    fetchData();
+  }, []);
 
   return (
     <div className="fixed top-0 left-0 h-screen w-60 z-50">
@@ -44,7 +69,7 @@ function DashboardNavbar() {
           </ul>
         </div>
         <div className="py-4 px-6 border-t dashboard-border-color">
-          <p>Email: abc@example.com</p>
+          <p>Email: {email}</p>
         </div>
       </div>
     </div>
