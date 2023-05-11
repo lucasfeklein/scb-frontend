@@ -35,6 +35,13 @@ const Header = () => {
     }
   };
 
+  function handleClick() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <>
       <header
@@ -48,6 +55,7 @@ const Header = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
+                onClick={handleClick}
                 className={`header-logo block w-full ${sticky ? "py-5 lg:py-2" : "py-8"
                   } `}
               >
