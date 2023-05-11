@@ -10,14 +10,14 @@ const featuresData: Feature[] = [
       "Apenas copie a URL do seu site para começar. Nós iremos buscar e preparar automaticamente os dados para treinamento.",
   },
   {
-    id: 1,
+    id: 2,
     icon: <FaRobot className="text-4xl" />,
     title: "Treine o chatbot",
     paragraph:
       "Treine seu chatbot com inteligência artificial baseado nas informações do seu site com apenas um clique.",
   },
   {
-    id: 1,
+    id: 3,
     icon: <FaCodeBranch className="text-4xl" />,
     title: "Adicione o código no seu site",
     paragraph:
