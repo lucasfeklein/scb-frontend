@@ -1,9 +1,10 @@
-"use client"
-import { useState } from 'react';
+"use client";
+import { api } from "@/services/api";
+import { useState } from "react";
 
 const SigninPage = () => {
   const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -11,33 +12,24 @@ const SigninPage = () => {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    setLoading(true)
+    setLoading(true);
     try {
-      const response = await fetch('http://localhost:8000/request-magic-link', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ email })
-      });
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
+      await api.post("/request-magic-link", { email });
       // Handle successful response
     } catch (error) {
       // Handle error
     }
-    setEmail('')
-    setLoading(false)
+    setEmail("");
+    setLoading(false);
   }
 
   return (
     <>
-      <section className="relative z-10 overflow-hidden pt-36 pb-16 md:pb-20 lg:pt-[180px] lg:pb-28">
+      <section className="relative z-10 overflow-hidden pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto max-w-[500px] rounded-md bg-primary bg-opacity-5 py-10 px-6 dark:bg-dark sm:p-[60px]">
+              <div className="mx-auto max-w-[500px] rounded-md bg-primary bg-opacity-5 px-6 py-10 dark:bg-dark sm:p-[60px]">
                 <h3 className="mb-3 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
                   Crie sua conta
                 </h3>
@@ -60,7 +52,7 @@ const SigninPage = () => {
                       type="email"
                       name="email"
                       placeholder="Escreva seu Email"
-                      className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                      className="w-full rounded-md border border-transparent px-6 py-3 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                       value={email}
                       onChange={handleEmailChange}
                     />
@@ -69,8 +61,9 @@ const SigninPage = () => {
                     <button
                       onClick={handleSubmit}
                       disabled={loading}
-                      className="flex w-full items-center justify-center rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-                      {loading ? '...' : 'Entre'}
+                      className="flex w-full items-center justify-center rounded-md bg-primary px-9 py-4 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+                    >
+                      {loading ? "..." : "Entre"}
                     </button>
                   </div>
                 </form>
