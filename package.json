@@ -9,23 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.0",
-    "@emotion/server": "^11.11.0",
-    "@mantine/core": "^6.0.10",
-    "@mantine/ds": "^6.0.10",
-    "@mantine/hooks": "^6.0.10",
-    "@mantine/next": "^6.0.10",
+    "@iconify/react": "^4.1.0",
     "@next/font": "13.1.6",
     "@tabler/icons": "^2.17.0",
     "@tabler/icons-react": "^2.17.0",
     "axios": "^1.4.0",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "markdown-to-jsx": "^7.2.0",
     "next": "^13.1.6",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-loader-spinner": "^5.3.4",
     "react-modal-video": "^2.0.0"
   },
   "devDependencies": {
@@ -36,6 +33,7 @@
     "prettier": "^2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.2",
     "tailwindcss": "^3.2.4",
+    "@tailwindcss/typography": "^0.5.9",
     "typescript": "^5.0.4"
   }
 }
