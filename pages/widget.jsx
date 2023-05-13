@@ -90,13 +90,11 @@ function App() {
   return (
     <div className="flex h-screen w-screen flex-col justify-between overflow-hidden bg-white">
       <div className="mb-2 border-b border-gray-300 bg-blue-500 p-4 text-white">
-        <p className="text-lg font-bold">Dynamic Bot</p>
+        <p className="text-lg font-bold">Chima Bot</p>
       </div>
       <div className="mb-2 h-full overflow-y-auto p-6" ref={chatHistoryRef}>
         <div className="mb-3 flex flex-row">
-          <p className={chatbotTextClasses}>
-            Olá! Como posso ajudar? {hostname}
-          </p>
+          <p className={chatbotTextClasses}>Olá! Como posso ajudar?</p>
         </div>
         {chatHistory.map((message, index) => (
           <div key={index} className="text-gray-700">
