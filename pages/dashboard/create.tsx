@@ -54,11 +54,11 @@ function CreateChatbot() {
 
         <input
           type="text"
-          value={"https://pub-2517a1c0fa894c8a94a8080903a74481.r2.dev/chat.js"}
+          value={`<script src="https://pub-2517a1c0fa894c8a94a8080903a74481.r2.dev/chat.js"></script>`}
           className="rounded-l-md border px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
           onClick={async () => {
             await navigator.clipboard.writeText(
-              "https://pub-2517a1c0fa894c8a94a8080903a74481.r2.dev/chat.js"
+              `<script src="https://pub-2517a1c0fa894c8a94a8080903a74481.r2.dev/chat.js"></script>`
             );
 
             alert("copied url");
