@@ -45,15 +45,6 @@ html {
   box-sizing: border-box;
 }
 
-.chatSize {
-  width: 440px;
-  height: 600px;
-}
-
-.chatHistorySize {
-  height: 450px;
-}
-
 ::-webkit-scrollbar {
   width: 5px;
 }
