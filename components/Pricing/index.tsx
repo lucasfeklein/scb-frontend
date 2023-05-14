@@ -26,7 +26,7 @@ const Pricing = () => {
               onClick={() => setIsMonthly(true)}
               className={`${
                 isMonthly
-                  ? "pointer-events-none text-slate-900"
+                  ? "pointer-events-none text-blue-600"
                   : "text-dark dark:text-white"
               } mr-4 cursor-pointer text-base font-semibold`}
             >
@@ -52,7 +52,7 @@ const Pricing = () => {
               className={`${
                 isMonthly
                   ? "text-dark dark:text-white"
-                  : "pointer-events-none text-slate-900"
+                  : "pointer-events-none text-blue-600"
               } ml-4 cursor-pointer text-base font-semibold`}
             >
               Anual

@@ -52,7 +52,7 @@ const SigninPage = () => {
                       type="email"
                       name="email"
                       placeholder="Escreva seu Email"
-                      className="shadow-one w-full rounded-md border border-transparent px-6 py-3 text-base text-slate-900 placeholder-slate-900 outline-none focus:border-blue-600 focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-xl"
+                      className="text-body-color placeholder-body-color shadow-one w-full rounded-md border border-transparent px-6 py-3 text-base outline-none focus:border-blue-600 focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-xl"
                       value={email}
                       onChange={handleEmailChange}
                     />
