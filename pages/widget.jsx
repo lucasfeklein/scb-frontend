@@ -89,7 +89,7 @@ function App() {
 
   return (
     <div className="flex h-screen w-screen flex-col justify-between overflow-hidden bg-white">
-      <div className="mb-2 border-b border-gray-300 bg-blue-500 p-4 text-white">
+      <div className="mb-2 border-b border-gray-300 bg-blue-600 p-4 text-white">
         <p className="text-lg font-bold">Chima Bot</p>
       </div>
       <div className="mb-2 h-full overflow-y-auto p-6" ref={chatHistoryRef}>
@@ -102,7 +102,7 @@ function App() {
               <div>
                 {message.user && (
                   <div className="overflow-wrap mb-3 flex flex-row flex-wrap justify-end break-words">
-                    <p className="ml-6 max-w-sm rounded-bl-lg rounded-br-lg rounded-tl-lg bg-blue-500 p-4 text-white">
+                    <p className="ml-6 max-w-sm rounded-bl-lg rounded-br-lg rounded-tl-lg bg-blue-600 p-4 text-white">
                       {message.user}
                     </p>
                   </div>
@@ -141,7 +141,7 @@ function App() {
             style={{ height: "44px", maxHeight: "120px" }}
           ></textarea>
           <button
-            className="absolute bottom-2 right-2 rounded bg-blue-500 px-2 py-2 text-xl font-bold text-white hover:bg-blue-700"
+            className="absolute bottom-2 right-2 rounded bg-blue-600 px-2 py-2 text-xl font-bold text-white hover:bg-blue-700"
             type="submit"
           >
             <Icon icon="fe:paper-plane" />

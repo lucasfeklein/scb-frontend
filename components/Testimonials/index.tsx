@@ -13,43 +13,46 @@ const testimonialData: Testimonial[] = [
     id: 2,
     question: "O chatbot responde em diferentes línguas?",
     content:
-    "Sim, você pode perguntar em qualquer idioma que o chatbot será capaz de identificar e responder de acordo.",
+      "Sim, você pode perguntar em qualquer idioma que o chatbot será capaz de identificar e responder de acordo.",
   },
   {
     id: 3,
     question: "Há um limite no número de mensagens que podem ser enviadas?",
     content:
-    "Atualmente, não há limite no número de mensagens que podem ser enviadas. Dito isso, estamos monitorando o uso e aplicaremos limites de taxa apenas se necessário.",
+      "Atualmente, não há limite no número de mensagens que podem ser enviadas. Dito isso, estamos monitorando o uso e aplicaremos limites de taxa apenas se necessário.",
   },
   {
     id: 4,
     question: "Como treinar o chatbot?",
     content:
       "No momento, só oferecemos suporte para treinar o chatbot através de URLs. Você pode simplesmente inserir uma URL e o chatbot será treinado em todo o conteúdo presente naquela URL.",
-    },
+  },
   {
-      id: 5,
-      question: "Qual modelo de inteligência artificial vocês utilizam?",
-      content:
+    id: 5,
+    question: "Qual modelo de inteligência artificial vocês utilizam?",
+    content:
       "Utilizamos o modelo de inteligência artificial ChatGPT, desenvolvido pela OpenAI",
-    },
-    {
-      id: 6,
-      question: "Quanto tempo demora para treinar?",
-      content:
+  },
+  {
+    id: 6,
+    question: "Quanto tempo demora para treinar?",
+    content:
       "Depende no número de páginas do seu website. Mas, de modo geral, demora apenas alguns minutos.",
-    },
-    {
-      id: 7,
-      question: "Quais dados você coleta do meu site?",
-      content:
-        "Nossa plataforma coleta dados das páginas do seu site para treinar o seu chatbot. Isso inclui dados de texto das páginas, bem como qualquer metadado, como títulos ou descrições de página. Não coletamos dados confidenciais do seu site. Nós escaneamos apenas dados públicos disponíveis para os mecanismos de busca.",
-    },
+  },
+  {
+    id: 7,
+    question: "Quais dados você coleta do meu site?",
+    content:
+      "Nossa plataforma coleta dados das páginas do seu site para treinar o seu chatbot. Isso inclui dados de texto das páginas, bem como qualquer metadado, como títulos ou descrições de página. Não coletamos dados confidenciais do seu site. Nós escaneamos apenas dados públicos disponíveis para os mecanismos de busca.",
+  },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="relative z-10 bg-primary/[.03] py-16 md:py-20 lg:py-28" id="faq">
+    <section
+      className="relative z-10 bg-blue-600/[.03] py-16 md:py-20 lg:py-28"
+      id="faq"
+    >
       <div className="container">
         <SectionTitle
           title="Perguntas Frequentes"

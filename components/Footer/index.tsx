@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp relative z-10 bg-primary bg-opacity-5 pt-16 md:pt-20 lg:pt-24"
+        className="wow fadeInUp relative z-10 bg-blue-600 bg-opacity-5 pt-16 md:pt-20 lg:pt-24"
         data-wow-delay=".1s"
       >
         <div className="container">
@@ -28,7 +28,7 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
-                <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
+                <p className="text-body-color mb-9 text-base font-medium leading-relaxed">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer lobortis.
                 </p>
@@ -36,7 +36,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    className="mr-6 text-[#CED3F6] hover:text-slate-900"
                   >
                     <svg
                       width="9"
@@ -50,7 +50,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    className="mr-6 text-[#CED3F6] hover:text-slate-900"
                   >
                     <svg
                       width="19"
@@ -64,7 +64,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    className="mr-6 text-[#CED3F6] hover:text-slate-900"
                   >
                     <svg
                       width="18"
@@ -78,7 +78,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    className="mr-6 text-[#CED3F6] hover:text-slate-900"
                   >
                     <svg
                       width="17"
@@ -102,7 +102,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="text-body-color mb-4 inline-block text-base font-medium hover:text-slate-900"
                     >
                       {" "}
                       Blog{" "}
@@ -111,7 +111,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="text-body-color mb-4 inline-block text-base font-medium hover:text-slate-900"
                     >
                       {" "}
                       Pricing{" "}
@@ -120,7 +120,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="text-body-color mb-4 inline-block text-base font-medium hover:text-slate-900"
                     >
                       {" "}
                       About{" "}
@@ -139,7 +139,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="text-body-color mb-4 inline-block text-base font-medium hover:text-slate-900"
                     >
                       {" "}
                       TOS{" "}
@@ -148,7 +148,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="text-body-color mb-4 inline-block text-base font-medium hover:text-slate-900"
                     >
                       {" "}
                       Privacy Policy{" "}
@@ -157,7 +157,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="text-body-color mb-4 inline-block text-base font-medium hover:text-slate-900"
                     >
                       {" "}
                       Refund Policy{" "}
@@ -176,7 +176,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="text-body-color mb-4 inline-block text-base font-medium hover:text-slate-900"
                     >
                       {" "}
                       Open Support Ticket{" "}
@@ -185,7 +185,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="text-body-color mb-4 inline-block text-base font-medium hover:text-slate-900"
                     >
                       {" "}
                       Terms of Use{" "}
@@ -194,7 +194,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="text-body-color mb-4 inline-block text-base font-medium hover:text-slate-900"
                     >
                       {" "}
                       About{" "}
@@ -205,10 +205,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bg-primary/10 py-8">
+        <div className="bg-blue-600/10 py-8">
           <div className="container">
-            <p className="text-center text-base text-body-color dark:text-white">
-              Template by UIdeck and <a href="https://nextjstemplates.com" rel="nofollow noopener">Next.js Templates</a>
+            <p className="text-body-color text-center text-base dark:text-white">
+              Template by UIdeck and{" "}
+              <a href="https://nextjstemplates.com" rel="nofollow noopener">
+                Next.js Templates
+              </a>
             </p>
           </div>
         </div>

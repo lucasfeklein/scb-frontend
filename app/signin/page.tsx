@@ -29,22 +29,22 @@ const SigninPage = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto max-w-[500px] rounded-md bg-primary bg-opacity-5 px-6 py-10 dark:bg-dark sm:p-[60px]">
+              <div className="dark:bg-dark mx-auto max-w-[500px] rounded-md bg-blue-600 bg-opacity-5 px-6 py-10 sm:p-[60px]">
                 <h3 className="mb-3 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
                   Crie sua conta
                 </h3>
                 <div className="mb-8 flex items-center justify-center">
-                  <span className="hidden h-[1px] w-full max-w-[60px] bg-body-color sm:block"></span>
-                  <p className="w-full px-5 text-center text-base font-medium text-body-color">
+                  <span className="bg-body-color hidden h-[1px] w-full max-w-[60px] sm:block"></span>
+                  <p className="text-body-color w-full px-5 text-center text-base font-medium">
                     Ou, entre com seu Email
                   </p>
-                  <span className="hidden h-[1px] w-full max-w-[60px] bg-body-color sm:block"></span>
+                  <span className="bg-body-color hidden h-[1px] w-full max-w-[60px] sm:block"></span>
                 </div>
                 <form>
                   <div className="mb-8">
                     <label
                       htmlFor="email"
-                      className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                      className="text-dark mb-3 block text-sm font-medium dark:text-white"
                     >
                       Email
                     </label>
@@ -52,7 +52,7 @@ const SigninPage = () => {
                       type="email"
                       name="email"
                       placeholder="Escreva seu Email"
-                      className="w-full rounded-md border border-transparent px-6 py-3 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                      className="shadow-one w-full rounded-md border border-transparent px-6 py-3 text-base text-slate-900 placeholder-slate-900 outline-none focus:border-blue-600 focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-xl"
                       value={email}
                       onChange={handleEmailChange}
                     />
@@ -61,7 +61,7 @@ const SigninPage = () => {
                     <button
                       onClick={handleSubmit}
                       disabled={loading}
-                      className="flex w-full items-center justify-center rounded-md bg-primary px-9 py-4 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+                      className="hover:shadow-signUp flex w-full items-center justify-center rounded-md bg-blue-600 px-9 py-4 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80"
                     >
                       {loading ? "..." : "Entre"}
                     </button>
