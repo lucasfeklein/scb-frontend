@@ -2,6 +2,16 @@ import DashboardLayout from "@/components/Dashboard/DashboardLayout";
 import { api } from "@/services/api";
 import { useState } from "react";
 
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+
 function CreateChatbot() {
   const [url, setUrl] = useState("");
 
@@ -34,36 +44,59 @@ function CreateChatbot() {
 
   return (
     <DashboardLayout>
-      <div className="flex h-full flex-col items-center justify-center">
-        <h2 className="mb-4 text-xl font-bold">Digite sua URL</h2>
-        <form onSubmit={handleSubmit} className="flex items-center">
-          <input
-            type="text"
-            value={url}
-            onChange={handleUrlChange}
-            placeholder="https://example.com/"
-            className="rounded-l-md border px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
-          />
-          <button
-            type="submit"
-            className="rounded-r-md bg-primary px-4 py-2 text-white"
-          >
-            Enviar
-          </button>
-        </form>
+      <h2 className="size mb-6 text-2xl font-medium">Dashboard</h2>
+      <div className="flex gap-6 ">
+        <Card>
+          <CardHeader>
+            <CardTitle>Crie o seu chatbot</CardTitle>
+            <CardDescription>
+              Cole a página inicial do seu site abaixo para criar o seu chatbot
+              e clique em enviar.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handleSubmit} className="flex space-x-2">
+              <Input
+                value={url}
+                onChange={handleUrlChange}
+                placeholder="https://example.com/"
+              />
+              <Button variant="secondary" className="shrink-0" type="submit">
+                Enviar
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
 
-        <input
-          type="text"
-          value={`<script src="https://pub-2517a1c0fa894c8a94a8080903a74481.r2.dev/chat.js"></script>`}
-          className="rounded-l-md border px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
-          onClick={async () => {
-            await navigator.clipboard.writeText(
-              `<script src="https://pub-2517a1c0fa894c8a94a8080903a74481.r2.dev/chat.js"></script>`
-            );
+        <Card>
+          <CardHeader>
+            <CardTitle>Adicione o chatbot ao seu site</CardTitle>
+            <CardDescription>
+              Copie e cole o script abaixo no seu site para adicionar o chatbot.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="flex space-x-2">
+              <Input
+                value={`<script src="https://pub-2517a1c0fa894c8a94a8080903a74481.r2.dev/chat.js"></script>`}
+                readOnly
+              />
+              <Button
+                variant="secondary"
+                className="shrink-0"
+                onClick={async () => {
+                  await navigator.clipboard.writeText(
+                    `<script src="https://pub-2517a1c0fa894c8a94a8080903a74481.r2.dev/chat.js"></script>`
+                  );
 
-            alert("copied url");
-          }}
-        />
+                  alert("copied url");
+                }}
+              >
+                Copy Link
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </DashboardLayout>
   );
