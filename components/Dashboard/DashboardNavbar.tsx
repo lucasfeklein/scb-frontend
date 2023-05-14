@@ -161,6 +161,7 @@ function DashboardNavbar() {
     >
       <Link
            href="/dashboard/create"
+           className="text-sm font-medium transition-colors hover:text-primary"
        >
         Create
       </Link>
