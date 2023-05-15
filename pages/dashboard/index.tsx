@@ -1,5 +1,4 @@
 import DashboardLayout from "@/components/Dashboard/DashboardLayout";
-import { api } from "@/services/api";
 import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -11,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { api } from "@/services/api";
 import { Loader2 } from "lucide-react";
 
 function CreateChatbot() {
@@ -35,12 +35,12 @@ function CreateChatbot() {
           },
         }
       );
-      return true;
       setIsLoading(false);
+      return true;
     } catch (err) {
       console.log(err);
-      return false;
       setIsLoading(false);
+      return false;
     }
   };
 
@@ -53,20 +53,12 @@ function CreateChatbot() {
             <div className="flex gap-6 ">
               <Card
                 className={
-                  (company.isReady || isLoading) &&
-                  `relative cursor-not-allowed bg-${
-                    company.isReady ? "green" : "blue"
-                  }-50`
+                  company.isReady && "relative cursor-not-allowed bg-green-50 "
                 }
               >
                 {company.isReady && (
                   <span className="absolute -bottom-2 -right-2 z-50 text-4xl">
                     ✅
-                  </span>
-                )}
-                {isLoading && (
-                  <span className="absolute -bottom-4 -right-4 z-50 text-4xl">
-                    <Loader2 className="h-12 w-12 animate-spin text-blue-500" />
                   </span>
                 )}
                 <CardHeader>
@@ -97,9 +89,16 @@ function CreateChatbot() {
                       variant="secondary"
                       className="shrink-0"
                       type="submit"
-                      disabled={company.isReady}
+                      disabled={company.isReady || isLoading}
                     >
-                      Enviar
+                      {isLoading ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />{" "}
+                          Carregando...
+                        </>
+                      ) : (
+                        "Enviar"
+                      )}
                     </Button>
                   </form>
                 </CardContent>
