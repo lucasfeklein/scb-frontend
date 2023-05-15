@@ -1,3 +1,4 @@
+import { LoadingPage } from "@/components/LoadingPage";
 import { api } from "@/services/api";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -19,11 +20,7 @@ const MagicLink = () => {
     token && verifyMagicLink();
   }, [token]);
 
-  return (
-    <>
-      <h1>Loading...</h1>
-    </>
-  );
+  return <LoadingPage />;
 };
 
 export default MagicLink;
