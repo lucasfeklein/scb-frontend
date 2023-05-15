@@ -38,12 +38,12 @@ const LoginPage = () => {
             <div className="w-full px-4">
               <div className="dark:bg-dark mx-auto max-w-[500px] rounded-md bg-blue-600 bg-opacity-5 px-6 py-10 sm:p-[60px]">
                 <h3 className="mb-3 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
-                  Crie sua conta
+                  Informe seu Email
                 </h3>
                 <div className="mb-8 flex items-center justify-center">
                   <span className="bg-body-color hidden h-[1px] w-full max-w-[60px] sm:block"></span>
                   <p className="text-body-color w-full px-5 text-center text-base font-medium">
-                    Ou, entre com seu Email
+                    Será enviado um link de verificação
                   </p>
                   <span className="bg-body-color hidden h-[1px] w-full max-w-[60px] sm:block"></span>
                 </div>
@@ -68,7 +68,7 @@ const LoginPage = () => {
                     <Button
                       onClick={handleSubmit}
                       disabled={loading}
-                      className="flex w-full items-center justify-center rounded-md bg-blue-600 px-9 py-4 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-xl"
+                      className="flex w-full items-center justify-center rounded-md bg-blue-600 px-9 py-4 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-blue-500 hover:bg-opacity-80 hover:shadow-xl"
                     >
                       {loading ? (
                         <>
