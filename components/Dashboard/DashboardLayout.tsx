@@ -92,6 +92,12 @@ function DashboardLayout({ children }) {
 
     const token = localStorage.getItem("token");
 
+    // Check if name has at least two words
+    if (name.trim().split(" ").length < 2) {
+      alert("Colocar nome completo.");
+      return;
+    }
+
     try {
       const { data } = await api.post(
         "/onboarding",
@@ -142,6 +148,7 @@ function DashboardLayout({ children }) {
                   value={name}
                   onChange={handleNameChange}
                   placeholder="John Doe"
+                  required
                 />
               </div>
               <div className="grid w-full max-w-sm items-center gap-1.5">
@@ -151,6 +158,7 @@ function DashboardLayout({ children }) {
                   value={companyName}
                   onChange={handleCompanyNameChange}
                   placeholder="Empresa Exemplo"
+                  required
                 />
               </div>
               <Button
