@@ -22,7 +22,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-import { Check, ChevronsUpDown } from "lucide-react";
+import { Check, ChevronsUpDown, Loader2 } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import {
@@ -56,6 +56,7 @@ function DashboardLayout({ children }) {
   const [selectedCompany, setSelectedCompany] = useState<Company | null>(null);
   const [name, setName] = useState("");
   const [companyName, setCompanyName] = useState("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function fetchData() {
@@ -89,12 +90,13 @@ function DashboardLayout({ children }) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+    setLoading(true);
     const token = localStorage.getItem("token");
 
     // Check if name has at least two words
     if (name.trim().split(" ").length < 2) {
       alert("Colocar nome completo.");
+      setLoading(false);
       return;
     }
 
@@ -123,6 +125,7 @@ function DashboardLayout({ children }) {
 
     setName("");
     setCompanyName("");
+    setLoading(false);
   };
 
   if (!user) {
@@ -165,8 +168,16 @@ function DashboardLayout({ children }) {
                 variant="secondary"
                 className="shrink-0 bg-blue-600 text-white hover:bg-blue-500 hover:shadow-xl"
                 type="submit"
+                disabled={loading}
               >
-                Enviar
+                {loading ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />{" "}
+                    Carregando...
+                  </>
+                ) : (
+                  "Enviar"
+                )}
               </Button>
             </form>
           </CardContent>
