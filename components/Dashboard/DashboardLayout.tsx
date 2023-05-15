@@ -41,6 +41,7 @@ type Company = {
   userId: number;
   name: string;
   website: string;
+  isReady: boolean;
 };
 type User = {
   email: string;
@@ -259,7 +260,21 @@ function DashboardLayout({ children }) {
           </div>
         </div>
       </div>
-      <div className="p-6">{children}</div>
+      <div className="p-6">
+        {children({
+          company: selectedCompany,
+          toggleReady: () => {
+            setSelectedCompany((prevCompany) =>
+              prevCompany
+                ? {
+                    ...prevCompany,
+                    isReady: !prevCompany.isReady,
+                  }
+                : null
+            );
+          },
+        })}
+      </div>
     </div>
   );
 }
