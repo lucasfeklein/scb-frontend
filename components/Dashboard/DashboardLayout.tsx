@@ -107,6 +107,9 @@ function DashboardLayout({ children }) {
         email: prevUser ? prevUser.email : "",
         company: [data],
       }));
+
+      setSelectedCompany(data);
+
       console.log(data);
     } catch (err) {
       console.log(err);
