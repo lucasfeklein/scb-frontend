@@ -19,6 +19,7 @@ function CreateChatbot() {
     Array<{ url: string; isSelected: boolean }>
   >([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [isFetching, setIsFetching] = useState(false);
 
   const handleUrlChange = (event) => {
     setUrl(event.target.value);
@@ -49,6 +50,7 @@ function CreateChatbot() {
 
   const handleCrawler = async () => {
     const token = localStorage.getItem("token");
+    setIsFetching(true);
     try {
       const response = await api.get("/fetch-urls", {
         params: { website: url },
@@ -63,7 +65,7 @@ function CreateChatbot() {
       }));
 
       setUrlsArray(transformedArray);
-
+      setIsFetching(false);
       setUrl("");
       return true;
     } catch (err) {
@@ -106,8 +108,16 @@ function CreateChatbot() {
                       variant="secondary"
                       className="shrink-0"
                       onClick={handleCrawler}
+                      disabled={isFetching}
                     >
-                      Buscar
+                      {isFetching ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />{" "}
+                          Buscando...
+                        </>
+                      ) : (
+                        "Buscar"
+                      )}
                     </Button>
                   </div>
                 </CardContent>
