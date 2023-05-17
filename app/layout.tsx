@@ -16,7 +16,15 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      <head>
+        <title>IAssistente</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta
+          name="description"
+          content="Crie um chatbot com Inteligência Artificial treinada pelo seu website e ofereça atendimento personalizado e eficiente para seus clientes. Lide com várias perguntas e solicitações simultâneas. Experimente agora a revolução da IA no atendimento ao cliente!"
+        />
+        <link rel="icon" href="/images/favicon.ico" />
+      </head>
 
       <body className="dark:bg-slate-900">
         <Providers>
