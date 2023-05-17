@@ -15,9 +15,10 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-slate-900 dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  ChatChima Bot para todos sites
+                  <span className="text-blue-600">IA</span>ssistente para todos
+                  sites
                 </h1>
-                <p className="text-body-color mb-12 text-base font-medium !leading-relaxed dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+                <p className="mb-12 text-base font-medium !leading-relaxed text-gray-600 dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
                   Crie um chatbot com Inteligência Artificial treinada pelo seu
                   website e ofereça atendimento personalizado e eficiente para
                   seus clientes. Lide com várias perguntas e solicitações
@@ -29,7 +30,7 @@ const Hero = () => {
                     href="/signin"
                     className="rounded-md bg-blue-600 py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-blue-500"
                   >
-                    Crie seu Chatbot!
+                    Crie seu chatbot!
                   </Link>
                 </div>
               </div>

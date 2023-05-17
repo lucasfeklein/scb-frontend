@@ -11,13 +11,13 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   return (
     <div className="w-full">
       <div
-        className="wow fadeInUp rounded-md bg-white p-8 shadow-one dark:bg-[#1D2144] lg:px-5 xl:px-8"
+        className="wow fadeInUp shadow-one rounded-md bg-white p-8 dark:bg-[#1D2144] lg:px-5 xl:px-8"
         data-wow-delay=".1s"
       >
-        <p className="border-b border-body-color border-opacity-10 pb-5 text-base font-bold leading-relaxed text-gray-900 dark:border-white dark:border-opacity-10 dark:text-white">
+        <p className="border-body-color border-b border-opacity-10 pb-5 text-base font-bold leading-relaxed text-gray-900 dark:border-white dark:border-opacity-10 dark:text-white">
           {question}
         </p>
-        <p className=" text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-white">
+        <p className=" text-base leading-relaxed text-gray-600 dark:border-white dark:border-opacity-10 dark:text-white">
           {content}
         </p>
       </div>

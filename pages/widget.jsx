@@ -90,14 +90,14 @@ function App() {
   return (
     <div className="flex h-screen w-screen flex-col justify-between overflow-hidden bg-white">
       <div className="mb-2 border-b border-gray-300 bg-blue-600 p-4 text-white">
-        <p className="text-lg font-bold">Chima Bot</p>
+        <p className="text-lg font-bold">IAssistente</p>
       </div>
       <div className="mb-2 h-full overflow-y-auto p-6" ref={chatHistoryRef}>
         <div className="mb-3 flex flex-row">
           <p className={chatbotTextClasses}>Olá! Como posso ajudar?</p>
         </div>
         {chatHistory.map((message, index) => (
-          <div key={index} className="text-gray-700">
+          <div key={index}>
             {(message.user || message.chatbot) && (
               <div>
                 {message.user && (
@@ -127,7 +127,7 @@ function App() {
       <form onSubmit={sendMessage}>
         <div className="relative mx-4 mb-4">
           <textarea
-            className="focus:shadow-outline mt-2 w-full resize-none rounded border bg-gray-100 py-2 pl-4 pr-11 text-gray-700 shadow focus:outline-none"
+            className="focus:shadow-outline mt-2 w-full resize-none rounded border bg-gray-100 py-2 pl-4 pr-11 text-gray-600 shadow focus:outline-none"
             id="message-input"
             placeholder="Type your message here"
             value={message}

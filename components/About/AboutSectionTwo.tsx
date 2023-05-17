@@ -20,27 +20,31 @@ const AboutSectionTwo = () => {
           <div className="w-full px-4 lg:w-1/2">
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                <h3 className="mb-4 text-xl font-bold text-slate-900 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Não precisa saber programar
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Você não precisa ter nenhuma habilidade de programação para construir o chatbot. Basta inserir uma tag de script no seu website.
+                <p className="text-base font-medium leading-relaxed text-gray-600 sm:text-lg sm:leading-relaxed">
+                  Você não precisa ter nenhuma habilidade de programação para
+                  construir o chatbot. Basta inserir uma tag de script no seu
+                  website.
                 </p>
               </div>
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                <h3 className="mb-4 text-xl font-bold text-slate-900 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Respostas específicas
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  O chatbot responde apenas com base nos dados fornecidos. Portanto, você sempre obtém resultados precisos.
+                <p className="text-base font-medium leading-relaxed text-gray-600 sm:text-lg sm:leading-relaxed">
+                  O chatbot responde apenas com base nos dados fornecidos.
+                  Portanto, você sempre obtém resultados precisos.
                 </p>
               </div>
               <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                <h3 className="mb-4 text-xl font-bold text-slate-900 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Integração fácil
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Leva apenas alguns minutos para criar, treinar e adicionar um chatbot ao seu website.
+                <p className="text-base font-medium leading-relaxed text-gray-600 sm:text-lg sm:leading-relaxed">
+                  Leva apenas alguns minutos para criar, treinar e adicionar um
+                  chatbot ao seu website.
                 </p>
               </div>
             </div>

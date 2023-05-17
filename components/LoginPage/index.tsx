@@ -37,12 +37,12 @@ const LoginPage = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="dark:bg-dark mx-auto max-w-[500px] rounded-md bg-blue-600 bg-opacity-5 px-6 py-10 sm:p-[60px]">
-                <h3 className="mb-3 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
+                <h3 className="mb-3 text-center text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">
                   Entre com seu Email
                 </h3>
                 <div className="mb-8 flex items-center justify-center">
                   <span className="bg-body-color hidden h-[1px] w-full max-w-[60px] sm:block"></span>
-                  <p className="text-body-color w-full px-5 text-center text-base font-medium">
+                  <p className="w-full px-5 text-center text-base font-medium text-gray-600">
                     Não possui conta?
                     <br />
                     <a href="/#pricing" className="text-blue-600 underline">
@@ -63,7 +63,7 @@ const LoginPage = () => {
                       type="email"
                       name="email"
                       placeholder="Escreva seu Email"
-                      className="text-body-color placeholder-body-color shadow-one w-full rounded-md border border-transparent px-6 py-3 text-base outline-none focus:border-blue-600 focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-xl"
+                      className="placeholder-body-color shadow-one w-full rounded-md border border-transparent px-6 py-3 text-base text-gray-600 outline-none focus:border-blue-600 focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-xl"
                       value={email}
                       onChange={handleEmailChange}
                     />

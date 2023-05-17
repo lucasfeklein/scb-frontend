@@ -14,10 +14,10 @@ const Breadcrumb = ({
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 md:w-8/12 lg:w-7/12">
               <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
-                <h1 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
+                <h1 className="mb-5 text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">
                   {pageName}
                 </h1>
-                <p className="text-body-color text-base font-medium leading-relaxed">
+                <p className="text-base font-medium leading-relaxed text-gray-600">
                   {description}
                 </p>
               </div>
@@ -28,7 +28,7 @@ const Breadcrumb = ({
                   <li className="flex items-center">
                     <Link
                       href="/"
-                      className="text-body-color pr-1 text-base font-medium hover:text-slate-900"
+                      className="pr-1 text-base font-medium text-gray-600 hover:text-slate-900"
                     >
                       Home
                     </Link>

@@ -11,10 +11,10 @@ const Contact = () => {
               data-wow-delay=".15s
               "
             >
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+              <h2 className="mb-3 text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
                 Need Help? Open a Ticket
               </h2>
-              <p className="text-body-color mb-12 text-base font-medium">
+              <p className="mb-12 text-base font-medium text-gray-600">
                 Our support team will get back to you ASAP via email.
               </p>
               <form>
@@ -30,7 +30,7 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder="Enter your name"
-                        className="text-body-color placeholder-body-color shadow-one dark:shadow-signUp w-full rounded-md border border-transparent py-3 px-6 text-base outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
+                        className="placeholder-body-color shadow-one dark:shadow-signUp w-full rounded-md border border-transparent py-3 px-6 text-base text-gray-600 outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
                       />
                     </div>
                   </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                       <input
                         type="email"
                         placeholder="Enter your email"
-                        className="text-body-color placeholder-body-color shadow-one dark:shadow-signUp w-full rounded-md border border-transparent py-3 px-6 text-base outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
+                        className="placeholder-body-color shadow-one dark:shadow-signUp w-full rounded-md border border-transparent py-3 px-6 text-base text-gray-600 outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
                       />
                     </div>
                   </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
-                        className="text-body-color placeholder-body-color shadow-one dark:shadow-signUp w-full resize-none rounded-md border border-transparent py-3 px-6 text-base outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
+                        className="placeholder-body-color shadow-one dark:shadow-signUp w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-gray-600 outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
                       ></textarea>
                     </div>
                   </div>
