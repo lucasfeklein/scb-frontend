@@ -38,12 +38,16 @@ const LoginPage = () => {
             <div className="w-full px-4">
               <div className="dark:bg-dark mx-auto max-w-[500px] rounded-md bg-blue-600 bg-opacity-5 px-6 py-10 sm:p-[60px]">
                 <h3 className="mb-3 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
-                  Informe seu Email
+                  Entre com seu Email
                 </h3>
                 <div className="mb-8 flex items-center justify-center">
                   <span className="bg-body-color hidden h-[1px] w-full max-w-[60px] sm:block"></span>
                   <p className="text-body-color w-full px-5 text-center text-base font-medium">
-                    Será enviado um link de verificação
+                    Não possui conta?
+                    <br />
+                    <a href="/#pricing" className="text-blue-600 underline">
+                      Confira nossos planos
+                    </a>
                   </p>
                   <span className="bg-body-color hidden h-[1px] w-full max-w-[60px] sm:block"></span>
                 </div>
