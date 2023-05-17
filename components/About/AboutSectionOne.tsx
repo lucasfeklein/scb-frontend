@@ -9,7 +9,7 @@ const checkIcon = (
 
 const AboutSectionOne = () => {
   const List = ({ text }) => (
-    <p className="mb-5 flex items-center text-lg font-medium text-gray-600">
+    <p className="mb-5 flex items-center text-lg font-medium text-[#959CB1]">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-blue-600 bg-opacity-10 text-blue-600">
         {checkIcon}
       </span>

@@ -7,7 +7,7 @@ const NewsLatterBox = () => {
       <h3 className="mb-4 text-2xl font-bold leading-tight text-slate-900 dark:text-white">
         Subscribe to receive future updates
       </h3>
-      <p className="border-body-color mb-11 border-b border-opacity-25 pb-11 text-base font-medium leading-relaxed text-gray-600 dark:border-white dark:border-opacity-25">
+      <p className="border-body-color mb-11 border-b border-opacity-25 pb-11 text-base font-medium leading-relaxed text-[#959CB1] dark:border-white dark:border-opacity-25">
         Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
         massa quis lectus.
       </p>
@@ -16,20 +16,20 @@ const NewsLatterBox = () => {
           type="text"
           name="name"
           placeholder="Enter your name"
-          className="border-body-color placeholder-body-color mb-4 w-full rounded-md border border-opacity-10 py-3 px-6 text-base font-medium text-gray-600 outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
+          className="border-body-color placeholder-body-color mb-4 w-full rounded-md border border-opacity-10 py-3 px-6 text-base font-medium text-[#959CB1] outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
         />
         <input
           type="email"
           name="email"
           placeholder="Enter your email"
-          className="border-body-color placeholder-body-color mb-4 w-full rounded-md border border-opacity-10 py-3 px-6 text-base font-medium text-gray-600 outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
+          className="border-body-color placeholder-body-color mb-4 w-full rounded-md border border-opacity-10 py-3 px-6 text-base font-medium text-[#959CB1] outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
         />
         <input
           type="submit"
           value="Subscribe"
           className="duration-80 hover:shadow-signUp mb-4 w-full cursor-pointer rounded-md border border-transparent bg-blue-600 py-3 px-6 text-center text-base font-medium text-white outline-none transition ease-in-out hover:bg-opacity-80 focus-visible:shadow-none"
         />
-        <p className="text-center text-base font-medium leading-relaxed text-gray-600">
+        <p className="text-center text-base font-medium leading-relaxed text-[#959CB1]">
           No spam guaranteed, So please don’t send any spam mail.
         </p>
       </form>

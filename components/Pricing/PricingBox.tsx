@@ -16,13 +16,13 @@ const PricingBox = (props: {
         <div className="flex items-center justify-between">
           <h3 className="price mb-2 text-3xl font-bold text-slate-900 dark:text-white">
             R$<span className="amount">{price}</span>
-            <span className="time text-gray-600">/{duration}</span>
+            <span className="time text-[#959CB1]">/{duration}</span>
           </h3>
           <h4 className="text-dark mb-2 text-xl font-bold dark:text-white">
             {packageName}
           </h4>
         </div>
-        <p className="mb-7 text-base text-gray-600">{subtitle}</p>
+        <p className="mb-7 text-base text-[#959CB1]">{subtitle}</p>
         <div className="border-body-color mb-8 border-b border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
           <button className="flex w-full items-center justify-center rounded-md bg-blue-600 p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-xl">
             Comece agora

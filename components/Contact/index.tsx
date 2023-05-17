@@ -14,7 +14,7 @@ const Contact = () => {
               <h2 className="mb-3 text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
                 Need Help? Open a Ticket
               </h2>
-              <p className="mb-12 text-base font-medium text-gray-600">
+              <p className="mb-12 text-base font-medium text-[#959CB1]">
                 Our support team will get back to you ASAP via email.
               </p>
               <form>
@@ -30,7 +30,7 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder="Enter your name"
-                        className="placeholder-body-color shadow-one dark:shadow-signUp w-full rounded-md border border-transparent py-3 px-6 text-base text-gray-600 outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
+                        className="placeholder-body-color shadow-one dark:shadow-signUp w-full rounded-md border border-transparent py-3 px-6 text-base text-[#959CB1] outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
                       />
                     </div>
                   </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                       <input
                         type="email"
                         placeholder="Enter your email"
-                        className="placeholder-body-color shadow-one dark:shadow-signUp w-full rounded-md border border-transparent py-3 px-6 text-base text-gray-600 outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
+                        className="placeholder-body-color shadow-one dark:shadow-signUp w-full rounded-md border border-transparent py-3 px-6 text-base text-[#959CB1] outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
                       />
                     </div>
                   </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
-                        className="placeholder-body-color shadow-one dark:shadow-signUp w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-gray-600 outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
+                        className="placeholder-body-color shadow-one dark:shadow-signUp w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-[#959CB1] outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51]"
                       ></textarea>
                     </div>
                   </div>

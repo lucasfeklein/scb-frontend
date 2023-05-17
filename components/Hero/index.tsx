@@ -18,7 +18,7 @@ const Hero = () => {
                   <span className="text-blue-600">IA</span>ssistente para todos
                   sites
                 </h1>
-                <p className="mb-12 text-base font-medium !leading-relaxed text-gray-600 dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+                <p className="mb-12 text-base font-medium !leading-relaxed text-[#959CB1] dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
                   Crie um chatbot com Inteligência Artificial treinada pelo seu
                   website e ofereça atendimento personalizado e eficiente para
                   seus clientes. Lide com várias perguntas e solicitações

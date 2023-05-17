@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 
 const Header = () => {
@@ -136,9 +137,9 @@ const Header = () => {
                 >
                   Entre
                 </Link>
-                {/* <div>
+                <div>
                   <ThemeToggler />
-                </div> */}
+                </div>
               </div>
             </div>
           </div>

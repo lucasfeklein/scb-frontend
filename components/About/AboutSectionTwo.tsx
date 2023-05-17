@@ -23,7 +23,7 @@ const AboutSectionTwo = () => {
                 <h3 className="mb-4 text-xl font-bold text-slate-900 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Não precisa saber programar
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-gray-600 sm:text-lg sm:leading-relaxed">
+                <p className="text-base font-medium leading-relaxed text-[#959CB1] sm:text-lg sm:leading-relaxed">
                   Você não precisa ter nenhuma habilidade de programação para
                   construir o chatbot. Basta inserir uma tag de script no seu
                   website.
@@ -33,7 +33,7 @@ const AboutSectionTwo = () => {
                 <h3 className="mb-4 text-xl font-bold text-slate-900 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Respostas específicas
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-gray-600 sm:text-lg sm:leading-relaxed">
+                <p className="text-base font-medium leading-relaxed text-[#959CB1] sm:text-lg sm:leading-relaxed">
                   O chatbot responde apenas com base nos dados fornecidos.
                   Portanto, você sempre obtém resultados precisos.
                 </p>
@@ -42,7 +42,7 @@ const AboutSectionTwo = () => {
                 <h3 className="mb-4 text-xl font-bold text-slate-900 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Integração fácil
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-gray-600 sm:text-lg sm:leading-relaxed">
+                <p className="text-base font-medium leading-relaxed text-[#959CB1] sm:text-lg sm:leading-relaxed">
                   Leva apenas alguns minutos para criar, treinar e adicionar um
                   chatbot ao seu website.
                 </p>

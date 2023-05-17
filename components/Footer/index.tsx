@@ -16,7 +16,7 @@ const Footer = () => {
                     <span className="text-blue-600">IA</span>ssistente
                   </p>
                 </Link>
-                <p className="mb-9 text-base font-medium leading-relaxed text-gray-600">
+                <p className="mb-9 text-base font-medium leading-relaxed text-[#959CB1]">
                   Crie um chatbot com Inteligência Artificial treinada pelo seu
                   website.
                 </p>
@@ -90,7 +90,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/#features"
-                      className="mb-4 inline-block text-base font-medium text-gray-600 hover:text-slate-900"
+                      className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-slate-900"
                     >
                       {" "}
                       Como funciona{" "}
@@ -99,7 +99,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/#about"
-                      className="mb-4 inline-block text-base font-medium text-gray-600 hover:text-slate-900"
+                      className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-slate-900"
                     >
                       {" "}
                       Sobre{" "}
@@ -108,7 +108,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/#pricing"
-                      className="mb-4 inline-block text-base font-medium text-gray-600 hover:text-slate-900"
+                      className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-slate-900"
                     >
                       {" "}
                       Planos{" "}
@@ -127,7 +127,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-gray-600 hover:text-slate-900"
+                      className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-slate-900"
                     >
                       {" "}
                       email@iassistente.com{" "}

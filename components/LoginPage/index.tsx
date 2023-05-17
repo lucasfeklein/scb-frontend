@@ -42,7 +42,7 @@ const LoginPage = () => {
                 </h3>
                 <div className="mb-8 flex items-center justify-center">
                   <span className="bg-body-color hidden h-[1px] w-full max-w-[60px] sm:block"></span>
-                  <p className="w-full px-5 text-center text-base font-medium text-gray-600">
+                  <p className="w-full px-5 text-center text-base font-medium text-[#959CB1]">
                     Não possui conta?
                     <br />
                     <a href="/#pricing" className="text-blue-600 underline">
@@ -63,7 +63,7 @@ const LoginPage = () => {
                       type="email"
                       name="email"
                       placeholder="Escreva seu Email"
-                      className="placeholder-body-color shadow-one w-full rounded-md border border-transparent px-6 py-3 text-base text-gray-600 outline-none focus:border-blue-600 focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-xl"
+                      className="placeholder-body-color shadow-one w-full rounded-md border border-transparent px-6 py-3 text-base text-[#959CB1] outline-none focus:border-blue-600 focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-xl"
                       value={email}
                       onChange={handleEmailChange}
                     />
