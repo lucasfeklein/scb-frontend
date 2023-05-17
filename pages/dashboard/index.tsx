@@ -15,6 +15,9 @@ import { Loader2 } from "lucide-react";
 
 function CreateChatbot() {
   const [url, setUrl] = useState("");
+  const [urlsArray, setUrlsArray] = useState<
+    Array<{ url: string; isSelected: boolean }>
+  >([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleUrlChange = (event) => {
@@ -44,6 +47,39 @@ function CreateChatbot() {
     }
   };
 
+  const handleCrawler = async () => {
+    const token = localStorage.getItem("token");
+    try {
+      const response = await api.get("/fetch-urls", {
+        params: { website: url },
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      const { urls } = response.data;
+      const transformedArray = urls.map((url) => ({
+        url: url,
+        isSelected: true,
+      }));
+
+      setUrlsArray(transformedArray);
+
+      setUrl("");
+      return true;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
+  };
+
+  const handleInput = (index) => {
+    setUrlsArray((prevUrlsArray) => {
+      const updatedArray = [...prevUrlsArray];
+      updatedArray[index].isSelected = !updatedArray[index].isSelected;
+      return updatedArray;
+    });
+  };
+
   return (
     <DashboardLayout>
       {({ company, toggleReady }) => {
@@ -51,6 +87,32 @@ function CreateChatbot() {
           <>
             <h2 className="size mb-6 text-2xl font-medium">Dashboard</h2>
             <div className="flex gap-6 ">
+              <Card>
+                <CardHeader>
+                  <CardTitle>1 - Buscar todas páginas do seu site</CardTitle>
+                  <CardDescription>
+                    Copie e cole a página inicial do seu site para buscarmos
+                    todas as páginas.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex space-x-2">
+                    <Input
+                      placeholder="https://exemplo.com.br"
+                      value={url}
+                      onChange={handleUrlChange}
+                    />
+                    <Button
+                      variant="secondary"
+                      className="shrink-0"
+                      onClick={handleCrawler}
+                    >
+                      Buscar
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
               <Card
                 className={
                   company.isReady && "relative cursor-not-allowed bg-green-50 "
@@ -61,11 +123,11 @@ function CreateChatbot() {
                     ✅
                   </span>
                 )}
+
                 <CardHeader>
-                  <CardTitle>1 - Crie o seu chatbot</CardTitle>
+                  <CardTitle>2 - Crie o seu chatbot</CardTitle>
                   <CardDescription>
-                    Cole a página inicial do seu site abaixo para criar o seu
-                    chatbot e clique em enviar.
+                    Selecione as páginas que você deseja e aperte Criar.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -79,12 +141,6 @@ function CreateChatbot() {
                     }}
                     className="flex space-x-2"
                   >
-                    <Input
-                      value={company.website ? company.website : url}
-                      onChange={handleUrlChange}
-                      placeholder="https://example.com/"
-                      disabled={company.isReady}
-                    />
                     <Button
                       variant="secondary"
                       className="shrink-0"
@@ -97,7 +153,7 @@ function CreateChatbot() {
                           Carregando...
                         </>
                       ) : (
-                        "Enviar"
+                        "Criar"
                       )}
                     </Button>
                   </form>
@@ -135,6 +191,24 @@ function CreateChatbot() {
                 </CardContent>
               </Card>
             </div>
+            {urlsArray.length > 0 && (
+              <div className="mt-5">
+                <p className="text-2xl font-bold">
+                  {urlsArray.length} links encontrados:
+                </p>
+                {urlsArray.map((urlObj, index) => (
+                  <div key={index} className="flex items-center border-b py-3">
+                    <input
+                      type="checkbox"
+                      checked={urlObj.isSelected}
+                      onChange={() => handleInput(index)}
+                      className="h-4 w-4"
+                    />
+                    <label className="ml-3">{urlObj.url}</label>
+                  </div>
+                ))}
+              </div>
+            )}
           </>
         );
       }}
