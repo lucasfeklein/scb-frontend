@@ -1,14 +1,12 @@
 "use client";
-import { useState } from "react";
+import Script from "next/script";
 import SectionTitle from "../Common/SectionTitle";
-import OfferList from "./OfferList";
-import PricingBox from "./PricingBox";
 
 const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
-
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
+      <Script src="https://js.stripe.com/v3/pricing-table.js" />
+
       <div className="container">
         <SectionTitle
           title="Escolha o melhor plano"
@@ -17,90 +15,10 @@ const Pricing = () => {
           width="665px"
         />
 
-        <div className="w-full">
-          <div
-            className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
-            data-wow-delay=".1s"
-          >
-            <span
-              onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-blue-600"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
-            >
-              Mensal
-            </span>
-            <div
-              onClick={() => setIsMonthly(!isMonthly)}
-              className="flex cursor-pointer items-center"
-            >
-              <div className="relative">
-                <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
-                <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 transition`}
-                >
-                  <span className="active h-4 w-4 rounded-full bg-white"></span>
-                </div>
-              </div>
-            </div>
-            <span
-              onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-blue-600"
-              } ml-4 cursor-pointer text-base font-semibold`}
-            >
-              Anual
-            </span>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <PricingBox
-            packageName="Básico"
-            price={isMonthly ? "99" : "120"}
-            duration={isMonthly ? "mês" : "ano"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Pro"
-            price={isMonthly ? "179" : "789"}
-            duration={isMonthly ? "mês" : "ano"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Enterprise"
-            price={isMonthly ? "499" : "999"}
-            duration={isMonthly ? "mês" : "ano"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
-          </PricingBox>
-        </div>
+        <stripe-pricing-table
+          pricing-table-id="prctbl_1N8bSdHMjqTlDAUmPLxnEf4G"
+          publishable-key="pk_test_51N8ZxpHMjqTlDAUm6p27WVpm4eXoL4YcTQPLP1OvjNvO4X5TuONJybkHTE0kwISmyW6PzLQhKhBD8CLgKQdP8NwO00khZaKikJ"
+        ></stripe-pricing-table>
       </div>
 
       <div className="absolute left-0 bottom-0 z-[-1]">
