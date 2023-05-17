@@ -65,42 +65,30 @@ const Pricing = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Básico"
-            price={isMonthly ? "99" : "120"}
+            price={isMonthly ? "99" : "1089"}
             duration={isMonthly ? "mês" : "ano"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Treine seu chatbot com até 25 páginas web"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="1 chatbot" status="active" />
+            <OfferList text="25 páginas web" status="active" />
           </PricingBox>
           <PricingBox
             packageName="Pro"
-            price={isMonthly ? "179" : "789"}
+            price={isMonthly ? "179" : "1969"}
             duration={isMonthly ? "mês" : "ano"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Treine seu chatbot com até 100 páginas web"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="1 chatbot" status="active" />
+            <OfferList text="100 páginas web" status="active" />
           </PricingBox>
           <PricingBox
             packageName="Enterprise"
-            price={isMonthly ? "499" : "999"}
+            price={isMonthly ? "499" : "5489"}
             duration={isMonthly ? "mês" : "ano"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Treine seu chatbot com até 500 páginas web"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="1 chatbot" status="active" />
+            <OfferList text="500 páginas web" status="active" />
           </PricingBox>
         </div>
       </div>
