@@ -192,7 +192,7 @@ function CreateChatbot() {
               </Card>
             </div>
             {urlsArray.length > 0 && (
-              <div className="mt-5">
+              <div className="mt-5 px-6">
                 <p className="text-2xl font-bold">
                   {urlsArray.length} links encontrados:
                 </p>
