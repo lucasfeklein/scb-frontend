@@ -59,6 +59,7 @@ function CreateChatbot() {
         },
       });
       const { urls } = response.data;
+      console.log(urls);
       const transformedArray = urls.map((url) => ({
         url: url,
         isSelected: true,
@@ -66,7 +67,6 @@ function CreateChatbot() {
 
       setUrlsArray(transformedArray);
       setIsFetching(false);
-      setUrl("");
       return true;
     } catch (err) {
       console.log(err);
