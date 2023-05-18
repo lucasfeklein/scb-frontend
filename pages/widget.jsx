@@ -136,6 +136,7 @@ function App() {
             onKeyDown={(e) => {
               if (e.key === "Enter" && !e.shiftKey) {
                 sendMessage(e);
+                e.target.style.height = "44px";
               }
             }}
             style={{ height: "44px", maxHeight: "120px" }}
