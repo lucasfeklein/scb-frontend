@@ -26,6 +26,10 @@ function CreateChatbot() {
   };
 
   const handleSubmit = async (company) => {
+    if (urlsArray.length === 0) {
+      alert("Nenhuma URL selecionada");
+      return;
+    }
     const token = localStorage.getItem("token");
     setIsLoading(true);
 
