@@ -32,7 +32,7 @@ function CreateChatbot() {
     try {
       await api.post(
         "/widget",
-        { companyId: company.id, website: url },
+        { companyId: company.id, urls: urlsArray },
         {
           headers: {
             Authorization: `Bearer ${token}`,
