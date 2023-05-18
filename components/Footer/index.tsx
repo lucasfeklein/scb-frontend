@@ -90,7 +90,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/#features"
-                      className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-slate-900"
+                      className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-blue-600"
                     >
                       {" "}
                       Como funciona{" "}
@@ -99,7 +99,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/#about"
-                      className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-slate-900"
+                      className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-blue-600"
                     >
                       {" "}
                       Sobre{" "}
@@ -108,7 +108,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/#pricing"
-                      className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-slate-900"
+                      className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-blue-600"
                     >
                       {" "}
                       Planos{" "}
@@ -125,7 +125,7 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <p className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-slate-900">
+                    <p className="mb-4 inline-block text-base font-medium text-[#959CB1]">
                       {" "}
                       email@iassistente.com{" "}
                     </p>
