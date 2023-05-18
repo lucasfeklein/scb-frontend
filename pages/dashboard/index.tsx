@@ -172,7 +172,7 @@ function CreateChatbot() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>2 - Adicione o chatbot ao seu site</CardTitle>
+                  <CardTitle>3 - Adicione o chatbot ao seu site</CardTitle>
                   <CardDescription>
                     Copie e cole o script abaixo no seu site para adicionar o
                     chatbot.

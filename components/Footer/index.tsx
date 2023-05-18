@@ -125,13 +125,10 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-slate-900"
-                    >
+                    <p className="mb-4 inline-block text-base font-medium text-[#959CB1] hover:text-slate-900">
                       {" "}
                       email@iassistente.com{" "}
-                    </a>
+                    </p>
                   </li>
                 </ul>
               </div>
