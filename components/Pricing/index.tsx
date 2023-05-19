@@ -1,5 +1,4 @@
 "use client";
-import Script from "next/script";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
@@ -9,8 +8,6 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
-      <Script src="https://js.stripe.com/v3/pricing-table.js" />
-
       <div className="container">
         <SectionTitle
           title="Escolha o melhor plano"
@@ -68,6 +65,11 @@ const Pricing = () => {
             price={isMonthly ? "99" : "1089"}
             duration={isMonthly ? "mês" : "ano"}
             subtitle="Treine seu chatbot com até 25 páginas web"
+            link={
+              isMonthly
+                ? "https://buy.stripe.com/test_aEU3d9gyJ1p65s46os"
+                : "https://buy.stripe.com/test_14k5lh5U53xe4o06ot"
+            }
           >
             <OfferList text="1 chatbot" status="active" />
             <OfferList text="25 páginas web" status="active" />
@@ -77,6 +79,11 @@ const Pricing = () => {
             price={isMonthly ? "179" : "1969"}
             duration={isMonthly ? "mês" : "ano"}
             subtitle="Treine seu chatbot com até 100 páginas web"
+            link={
+              isMonthly
+                ? "https://buy.stripe.com/test_cN29Bx1DP2tag6IeUW"
+                : "https://buy.stripe.com/test_cN2fZV3LX0l21bO9AD"
+            }
           >
             <OfferList text="1 chatbot" status="active" />
             <OfferList text="100 páginas web" status="active" />
@@ -86,6 +93,11 @@ const Pricing = () => {
             price={isMonthly ? "499" : "5489"}
             duration={isMonthly ? "mês" : "ano"}
             subtitle="Treine seu chatbot com até 500 páginas web"
+            link={
+              isMonthly
+                ? "https://buy.stripe.com/test_fZedRN1DP6JqdYAeUU"
+                : "https://buy.stripe.com/test_5kA2954Q1c3K8Eg9AB"
+            }
           >
             <OfferList text="1 chatbot" status="active" />
             <OfferList text="500 páginas web" status="active" />

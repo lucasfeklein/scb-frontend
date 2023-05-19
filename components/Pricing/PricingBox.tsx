@@ -1,11 +1,12 @@
 const PricingBox = (props: {
   price: string;
+  link: string;
   duration: string;
   packageName: string;
   subtitle: string;
   children: React.ReactNode;
 }) => {
-  const { price, duration, packageName, subtitle, children } = props;
+  const { price, link, duration, packageName, subtitle, children } = props;
 
   return (
     <div className="w-full">
@@ -24,9 +25,12 @@ const PricingBox = (props: {
         </div>
         <p className="mb-7 text-base text-[#959CB1]">{subtitle}</p>
         <div className="border-body-color mb-8 border-b border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
-          <button className="flex w-full items-center justify-center rounded-md bg-blue-600 p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-xl">
+          <a
+            href={link}
+            className="flex w-full items-center justify-center rounded-md bg-blue-600 p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-xl"
+          >
             Comece agora
-          </button>
+          </a>
         </div>
         <div>{children}</div>
         <div className="absolute bottom-0 right-0 z-[-1]">
