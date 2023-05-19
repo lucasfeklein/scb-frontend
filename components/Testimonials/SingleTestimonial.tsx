@@ -17,7 +17,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
         <p className="border-body-color border-b border-opacity-10 pb-5 text-base font-bold leading-relaxed text-gray-900 dark:border-white dark:border-opacity-10 dark:text-white">
           {question}
         </p>
-        <p className=" text-base leading-relaxed text-[#959CB1] dark:border-white dark:border-opacity-10 dark:text-white">
+        <p className=" text-base leading-relaxed text-[#959CB1] dark:border-white dark:border-opacity-10">
           {content}
         </p>
       </div>
