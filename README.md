@@ -1,35 +1,38 @@
-# Startup - Free Next.js Startup Website Template
+# Smart Chatbot
 
-Startup free, open-source, and premium-quality startup website template for Next.js comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+Powered by Artificial Intelligence from OpenAi.
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+An intelligent Chatbot that extracts information from a client's website and delivers well-structured, highly efficient, and pinpoint accurate responses. Embedding this Chatbot onto a client's website is as simple as copying and pasting a script tag.
 
-### ✨ Key Features
-- Crafted for Startup and SaaS Business
-- Next.js 13 and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+## Links for the Frontend and Widget
 
-### [🚀 View Demo](https://startup.nextjstemplates.com/)
+- [scb-widget](https://github.com/lucasfeklein/scb-widget)
+- [scb-backend](https://github.com/lucasfeklein/scb-backend)
 
-### [📦 Download](https://nextjstemplates.com/templates/startup)
+## Chat DEMO
 
-### [🔌 Documentation](https://nextjstemplates.com/docs)
+<img src="https://github.com/lucasfeklein/scb-backend/blob/main/scbgif.gif" width="300"/>
 
-### ⚡ Deploy Now
+## Project Development
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
+The Smart Chatbot project is a comprehensive solution that leverages advanced technologies to provide a seamless and efficient experience for both website owners and their visitors. Here's an overview of the key components and technologies used in its development:
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
+### Frontend
 
+The frontend of the Smart Chatbot is built using Next.js, a popular React framework. Next.js offers a robust foundation for building interactive and fast web applications. It allows for server-side rendering, optimized routing, and a smooth user experience.
 
-### 📄 License
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
+### Backend
 
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
+The backend of the Smart Chatbot is integrated with several essential services to ensure its functionality and security:
 
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
+- **Stripe Integration**: It was incorporated Stripe, a widely trusted payment processing platform, to handle transactions and payments.
+
+- **Magic Link Authentication**: The authentication system is fortified with Magic Link authentication. Magic links are secure and user-friendly, allowing clients to access their accounts with a simple click on a link sent to their email address.
+
+- **Database**: We utilize a robust database system to store and manage client information securely. This ensures that data is readily accessible for the Chatbot's intelligent responses while adhering to strict data protection standards.
+
+### Chat Widget
+
+To make the integration process as effortless as possible, it was developed a user-friendly chat widget. Website owners can easily embed this widget onto their websites by adding a simple script tag. This widget provides visitors with direct access to the Smart Chatbot, enhancing user engagement and satisfaction.
+
+With the Smart Chatbot, we aim to provide a comprehensive and AI-powered solution that not only automates responses but also enhances the overall user experience on your website. Whether you're looking to streamline customer interactions, handle payments, or store client data securely, our project has you covered.
